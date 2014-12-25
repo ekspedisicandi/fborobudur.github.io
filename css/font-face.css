@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'AktivGroteskBold';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_0-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_0-webfont.eot#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_0-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_0-webfont.svg#AktivGroteskBold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AktivGroteskLight';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_lt_0-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_lt_0-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_lt_0-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/aktivgrotesk_std_lt_0-webfont.svg#AktivGroteskLight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'EffraBold';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_0-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_0-webfont.eot#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_0-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_0-webfont.svg#EffraBold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'EffraLight';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_lt_0-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_lt_0-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_lt_0-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_lt_0-webfont.svg#EffraLight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'EffraMedium';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_md_0-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_md_0-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_md_0-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_md_0-webfont.svg#EffraMedium) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'EffraRegular';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_rg_0-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_rg_0-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_rg_0-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_rg_0-webfont.ttf) format('truetype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/effra_std_rg_0-webfont.svg#EffraRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LexiaBold';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std-webfont.svg#LexiaBold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LexiaBoldItalic';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_bdit-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_bdit-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_bdit-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_bdit-webfont.svg#LexiaBoldItalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LexiaLight';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_lt-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_lt-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_lt-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_lt-webfont.svg#LexiaLight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LexiaLightItalic';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_ltit-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_ltit-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_ltit-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_ltit-webfont.svg#LexiaLightItalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LexiaThin';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_th-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_th-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_th-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_th-webfont.svg#LexiaThin) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LexiaThinItalic';
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_thit-webfont.eot);
+    src: url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_thit-webfont.eot?#iefix) format('embedded-opentype'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_thit-webfont.woff) format('woff'),
+         url(http://www.lancaster.ac.uk/media/lancaster-university/style-assets/fonts/lexia_std_thit-webfont.svg#LexiaThinItalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
