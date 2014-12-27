@@ -1,0 +1,2453 @@
+/*---------------------------------------------*/
+/* Fonts
+/*---------------------------------------------*/
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../../../../../country-select/index6a16.html');
+	src: url('../../../../../eu/country-select7f12.html?#iefix') format('embedded-opentype'),
+		url('../fonts/proxima/ProximaNova-Reg-webfont.woff') format('woff'),
+		url('../fonts/proxima/ProximaNova-Reg-webfont.ttf') format('truetype'),
+		url('../fonts/proxima/ProximaNova-Reg-webfont.svg#ProximaNovaRegular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLight';
+	src: url('../fonts/proxima/proximanova-light-webfont.eot');
+	src: url('../fonts/proxima/proximanova-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/proxima/proximanova-light-webfont.woff') format('woff'),
+		url('../fonts/proxima/proximanova-light-webfont.ttf') format('truetype'),
+		url('../fonts/proxima/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/proxima/proximanova-bold-webfont.eot');
+	src: url('../fonts/proxima/proximanova-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/proxima/proximanova-bold-webfont.woff') format('woff'),
+		url('../fonts/proxima/proximanova-bold-webfont.ttf') format('truetype'),
+		url('../fonts/proxima/proximanova-bold-webfont.svg#ProximaNovaBold') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'alex_brushregular';
+	src: url('../../../../../eu/sites/all/themes/barbour_christmas/fonts/alexbrush/alexbrush-regular-webfont.html');
+	src: url('../fonts/alexbrush/alexbrush-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/alexbrush/alexbrush-regular-webfont.woff') format('woff'),
+		url('../fonts/alexbrush/alexbrush-regular-webfont.ttf') format('truetype'),
+		url('../fonts/alexbrush/alexbrush-regular-webfont.svg#alex_brushregular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*---------------------------------------------*/
+/* Basic Styles
+/*---------------------------------------------*/
+/* Reset margin and padding */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: "ProximaNovaRegular", "Helvetica", Arial, sans-serif;
+	font-size: 100%;
+}
+
+img {
+	vertical-align: top;
+	border: 0;
+}
+
+video {
+	border: 0;
+}
+
+#dynamic-page {
+	width: 100%;
+	min-width: 1000px;
+	margin: 0 auto;
+	background: transparent url('../images/global/site-background.jpg') repeat 50% 0;
+}
+
+.extra-info {
+	display: none;
+}
+
+.bg-image {
+	position: relative;
+	left: 50%;
+	float: left;
+	width: 100%;
+}
+
+.bg-image img {
+	position: relative;
+	right: 50%;
+	float: left;
+	width: 100%;
+	z-index: 8;
+}
+
+.bg-image video {
+	width: 100%;
+	height: 100%;
+}
+
+#header-video {
+	position: absolute;
+	top: 0;
+	left: -50%;
+	right: 50%;
+	bottom: 0;
+	z-index: 9;
+}
+
+/*---------------------------------------------*/
+/* Header
+/*---------------------------------------------*/
+.site-header {
+	position: relative;
+	background: #fff;
+}
+
+.site-header h1 img {
+	display: block;
+	margin: 0 auto;
+}
+
+.site-header a {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -7px;
+	font-size: 0.75em;
+	color: #7d7d7d;
+	text-decoration: underline;
+}
+
+.site-header a:hover {
+	color: #000;
+}
+
+/*---------------------------------------------*/
+/* Footer
+/*---------------------------------------------*/
+.site-footer {
+	padding: 30px 33px 36px 33px;
+	background: transparent url('../images/global/dark-texture-bg.jpg') repeat 0 0;
+}
+
+.site-footer:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.site-footer ul {
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+
+.site-footer .back-to-top {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.site-footer .terms,
+.site-footer .privacy {
+	float: left;
+	padding: 0 20px 0 0;
+}
+
+.site-footer a {
+	display: block;
+	color: #fff;
+	font-size: 0.75em;
+	text-decoration: none;
+}
+
+.site-footer .back-to-top a {
+	padding: 0 21px 0 0;
+	background: transparent url('../images/global/footer-back-to-top-bg.png') no-repeat 100% 4px;
+}
+
+/*---------------------------------------------*/
+/* Film - Splash Screen
+/*---------------------------------------------*/
+.film {
+	position: relative;
+	padding: 0 0 54px 0;
+	overflow: hidden;
+	background: #fff;
+}
+
+.film.fixed {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	padding: 0;
+	min-width: 1000px;
+	/*max-width: 1680px;*/
+	min-height: 550px;
+}
+
+.title-screen {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.splash {
+	width: 100%;
+	overflow: hidden;
+}
+
+.splash a {
+	display: block;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.splash a:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.splash .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 70px;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.splash .overlay .title {
+	display: table;
+	width: 430px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.splash .overlay .content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.splash h1 {
+	width: 382px;
+	height: 220px;
+	margin: 0 auto 31px auto;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/home/video-logo.png') no-repeat 0 0;
+}
+
+.splash h1.holidays {
+	height: 275px;
+	background: transparent url('../images/home/video-logo-us.png') no-repeat 0 0;
+}
+
+.splash p {
+	display: block;
+	width: 500px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 700;
+	text-shadow: #000 1px 1px 2px;
+	text-align: center;
+	line-height: 1.313em;
+	text-transform: uppercase;
+}
+
+.splash span {
+	display: block;
+	width: 61px;
+	height: 61px;
+	margin: 24px auto 0 auto;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/home/video-large-play-button.png') no-repeat 0 0;
+}
+
+.splash a:hover span {
+	background-position: 0 -61px;
+}
+
+.tab-promo {
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -182px;
+	z-index: 21;
+}
+
+.win-promo {
+	display: none;
+	bottom: -32px;
+}
+
+.tab-promo .copy:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.tab-promo .copy {
+	float: left;
+	background: #fff;
+	-webkit-transition: padding-bottom 0.2s ease-in-out;
+	transition: padding-bottom 0.2s ease-in-out;
+}
+
+.tab-promo .copy:hover {
+	padding-bottom: 54px;
+}
+
+.win-promo .copy {
+	padding-bottom: 15px;
+}
+
+.win-promo .copy:hover {
+	padding-bottom: 30px;
+}
+
+.tab-promo a {
+	display: block;
+	width: 315px;
+	padding: 25px 25px 18px 25px;
+	text-decoration: none;
+	color: #000;
+	background: #fff url('../images/home/video-share-tab-bg.png') no-repeat 50% 100%;
+}
+
+.tab-promo p {
+	padding: 0;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
+
+.tab-promo i {
+	display: block;
+	font-family: "alex_brushregular", Georgia, serif;
+	color: #c32020;
+	font-size: 2.188em;
+	font-style: normal;
+}
+
+.tab-promo b {
+	font-family: "ProximaNovaRegular", "Helvetica", Arial, sans-serif;
+	font-size: 1.188em;
+}
+
+@media screen and (max-width: 1280px) {
+	.watch-video .bottom-nav h1 {
+		display: none;
+	}
+}
+
+/*---------------------------------------------*/
+/* Film - Video Player
+/*---------------------------------------------*/
+.watch-video {
+	position: absolute;
+	top: 0;
+	/* Instead of display: none, to help Firefox load the YouTube video */
+	left: 100%;
+	right: 0;
+	bottom: 0;
+	z-index: 4;
+}
+
+.watch-video .player img {
+	width: 100%;
+}
+
+.film .top-nav {
+	position: absolute;
+	z-index: 15;
+	/* Animated to 0 with JS */
+	top: -40px;
+	width: 100%;
+	background: transparent url('../images/global/dark-texture-bg.jpg') repeat 0 0;
+}
+
+.film .top-nav .close {
+	float: right;
+	display: block;
+	margin: 0 11px 0 0;
+	padding: 8px 20px 10px 0;
+	color: #fff;
+	font-size: 0.75em;
+	text-decoration: none;
+	background: transparent url('../images/home/video-close-button-bg.png') no-repeat 100% 10px;
+}
+
+.film .bottom-nav {
+	position: absolute;
+	z-index: 20;
+	display: none;
+	/* Animated to 0 with JS */
+	bottom: -40px;
+	width: 100%;
+	background: transparent url('../images/global/dark-texture-bg.jpg') repeat 0 0;
+}
+
+.watch-video .bottom-nav .share-links {
+	float: right;
+}
+
+.watch-video .bottom-nav h1 {
+	float: left;
+	padding: 10px 8px 0 0;
+	color: #fff;
+	font-weight: 400;
+	font-size: 0.75em;
+}
+
+.watch-video .bottom-nav ul {
+	float: left;
+	list-style: none;
+	padding: 0 7px 0 0;
+}
+
+.watch-video .bottom-nav li {
+	float: left;
+	display: inline;
+}
+
+.watch-video .bottom-nav a {
+	display: block;
+	width: 30px;
+	height: 32px;
+	background-position: 0 -32px;
+}
+
+.watch-video .bottom-nav a span {
+	display: block;
+	width: 30px;
+	height: 32px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+.watch-video .bottom-nav .facebook,
+.watch-video .bottom-nav .facebook span {
+	background-image: url('../images/home/video-share-facebook.png');
+}
+
+.watch-video .bottom-nav .twitter,
+.watch-video .bottom-nav .twitter span {
+	background-image: url('../images/home/video-share-twitter.png');
+}
+
+.watch-video .bottom-nav a:hover span {
+	opacity: 0;
+}
+
+.watch-video .video {
+	position: absolute;
+	/* TEMP */
+	/* right: 66.6%;*/
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.watch-video .videoplayer {
+	width: 100%;
+	height: 100%;
+}
+
+/* Buffering Panel */
+.watch-video .intro-panel {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 30;
+	display: none;
+}
+
+.watch-video .intro-panel .panel {
+	display: table;
+	width: 427px;
+	height: 100%;
+	margin: 0 auto;
+	
+}
+
+.watch-video .intro-panel .content {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.watch-video .intro-panel .centered-copy {
+	padding: 10px;
+	background: #fff;
+}
+
+.watch-video .intro-panel .copy {
+	width: 300px;
+	padding: 27px 52px 90px 52px;
+	text-align: center;
+	border: 1px solid #e2d3af;
+	background: transparent url('../images/home/loading.gif') no-repeat 50% 100%;
+}
+
+.watch-video .intro-panel h2 {
+	font-family: "ProximaNovaBold", "Helvetica", Arial, sans-serif;
+	font-size: 1.125em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.watch-video .intro-panel dl {
+
+}
+
+.watch-video .intro-panel dt {
+	display: none;
+}
+
+.watch-video .intro-panel dd {
+	padding: 7px 0 0 0;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	color: #000;
+	font-size: 1.25em;
+}
+
+.watch-video .intro-panel hr {
+	width: 8px;
+	margin: 11px auto 9px auto;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #000;
+}
+
+.watch-video .intro-panel p {
+	font-size: 0.875em;
+	color: #000;
+}
+
+/* Player Controls */
+.watch-video .player-controls {
+	position: absolute;
+	bottom: 32px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.watch-video .player-controls .moving-content {
+	position: relative;
+	top: 116px;
+}
+
+.watch-video .player-controls .moving-content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.watch-video .player-controls .background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	opacity: 0.9;
+	background: #000;
+}
+
+/* Contains both controls and message 
+   This padding is animated to reduce the height of the controls area */
+.watch-video .player-controls .content {
+	padding: 45px 19px 45px 19px;
+}
+
+.watch-video .player-controls .controls {
+	position: relative;
+	z-index: 35;
+	color: #fff;
+	width: 912px;
+	margin: 0 auto 0 auto;
+}
+
+.watch-video .player-controls .controls:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.watch-video .player-controls .message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	/* TEMP */
+	display: none;
+	z-index: 4;
+	width: 912px;
+	margin: 0 auto;
+	padding: 45px 0;
+	color: #fff;
+	font-size: 1em;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	text-align: center;
+}
+
+.watch-video .player-controls .button,
+.watch-video .player-controls .button span {
+	float: left;
+	display: block;
+	width: 40px;
+	height: 26px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 -52px;
+}
+
+.watch-video .player-controls .button span {
+	background-position: 0 0;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+.watch-video .player-controls .button:hover span {
+	opacity: 0;
+}
+
+.watch-video .player-controls .play-button,
+.watch-video .player-controls .play-button span {
+	background-image: url('../images/home/video-controls-play-button.png');
+}
+
+.watch-video .player-controls .button.active {
+	background-position: 0 -78px;
+}
+
+.watch-video .player-controls .button.active span {
+	background-position: 0 -26px;
+}
+
+.watch-video .player-controls .mute-button {
+	margin-right: 3px;
+}
+
+.watch-video .player-controls .mute-button,
+.watch-video .player-controls .mute-button span {
+	background-image: url('../images/home/video-controls-mute-button.png');
+}
+
+.watch-video .player-controls .help-button,
+.watch-video .player-controls .help-button span {
+	background-image: url('../images/home/video-controls-help-button.png');
+}
+
+.watch-video .progress-bar {
+	position: relative;
+	float: left;
+	width: 75%;
+	height: 26px;
+}
+
+.watch-video .progress-bar div {
+	position: absolute;
+	top: 12px;
+	left: 0;
+	height: 1px;
+}
+
+.watch-video .progress-bar .progress {
+	width: 50%;
+	z-index: 5;
+	background: #917b40;
+}
+
+.watch-video .progress-bar .loaded {
+	z-index: 4;
+	width: 80%;
+	background: #cccbca;
+}
+
+.watch-video .progress-bar .hitarea {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 26px;
+	z-index: 10;
+}
+
+.watch-video .progress-bar .background-bar {
+	z-index: 2;
+	width: 100%;
+	background: #4c4844;
+}
+
+.watch-video .progress-bar .cuepoints {
+	position: relative;
+	z-index: 6;
+	list-style: none;
+}
+
+.watch-video .progress-bar .cuepoints li {
+	position: absolute;
+	left: 20%;
+	top: 10px;
+	width: 0;
+	border: 3px solid #4c4844;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transition: border-color 0.15s linear;
+	transition: border-color 0.15s linear;
+}
+
+.watch-video .progress-bar .cuepoints li.loadStatus {
+	border-color: #cccbca;
+}
+
+.watch-video .progress-bar .cuepoints li.active {
+	border-color: #917b40;
+}
+
+.watch-video .time {
+	float: left;
+	padding: 7px 15px 0 15px;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	color: #f9f4e6;
+	font-size: 0.625em;
+}
+
+.watch-video .time .current {
+	float: left;
+	display: block;
+	min-width: 31px;
+}
+
+.watch-video .time .current:after {
+	float: right;
+	display: block;
+	content: " /";
+}
+
+.watch-video .time .duration {
+	float: left;
+	display: block;
+	min-width: 32px;
+	padding: 0 0 0 2px;
+}
+
+.watch-video .video-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* Labels */
+.watch-video .labels {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -148px;
+	top: 0;
+	list-style: none;
+	background: transparent url('../images/ie/transparent-bg.gif') repeat 0 0;
+}
+
+.watch-video .labels li {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	padding: 6px;
+	text-transform: uppercase;
+	font-size: 0.813em;
+}
+
+.watch-video .labels li a {
+	position: relative;
+	display: block;
+	padding: 22px 23px;
+	z-index: 2;
+	color: #fff;
+	border: 1px solid #8b1313;
+	text-decoration: none;
+}
+
+.watch-video .labels .background {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+	background: #a91717;
+}
+
+.watch-video .labels li:hover .background {
+	opacity: 1;
+}
+
+.watch-video .dimmer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 49;
+	opacity: 0;
+	display: none;
+	background: #000;
+}
+
+/*---------------------------------------------*/
+/* Film - Look Browser
+/*---------------------------------------------*/
+.looks {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 32px;
+	left: 100%;
+	z-index: 13;
+	width: 66.6%;
+	padding: 0 0 0 10px;
+	background: transparent url('../images/global/dark-texture-bg.jpg') repeat 0 0;
+}
+
+.looks .all-looks {
+	position: absolute;
+	top: 32px;
+	bottom: 0;
+	width: 100%;
+	list-style: none;
+	background: #fff;
+}
+
+.looks .all-looks li {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.look {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 10% 0;
+}
+
+.look .slides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+}
+
+.look .slides li {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: block;
+}
+
+.look .slides li:first-child {
+	position: relative;
+	left: 0;
+}
+
+.look .slides .slide-content {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.look .description {
+	display: table-cell;
+	width: 50%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.look .content {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.look dl {
+
+}
+
+.look dt {
+	display: none;
+}
+
+.look dd {
+	padding: 0 0 8px 0;
+	font-size: 0.813em;
+	color: #000;
+}
+
+.look h3 {
+	padding: 0 0 10px 0;
+	font-family: "ProximaNovaBold", "Helvetica", Arial, sans-serif;
+	color: #000;
+	font-size: 1.875em;
+}
+
+.look p {
+	padding: 0 0 20px 0;
+	font-size: 0.875em;
+	line-height: 1.438em;
+	color: #000;
+}
+
+.look .product-link {
+	padding: 0 0 0 12px;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 0.813em;
+	text-decoration: none;
+	line-height: 1em;
+	-webkit-transition: color 0.15s linear;
+	transition: color 0.15s linear;
+	background: transparent url('../images/global/link-arrow-bg.png') no-repeat 0 3px;
+}
+
+.look .product-link:hover {
+	color: #676767;
+	background-position: 0 -47px;
+}
+
+.look .product-shot {
+	display: table-cell;
+	width: 50%;
+	height: 100%;
+}
+
+.look img {
+	width: 70%;
+}
+
+.look .navigation {
+	position: relative;
+	z-index: 25;
+	width: 50%;
+	height: 42px;
+	margin: 0 auto;
+	padding: 12px 0 0 0;
+}
+
+.look .navigation a {
+	float: left;
+	width: 62px;
+	height: 42px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/home/looks-pagination-buttons.png') no-repeat 0 0;
+}
+
+.look .navigation a:hover {
+	background-position: 0 -42px;
+}
+
+.look .navigation .next {
+	float: right;
+	background-position: -62px 0;
+}
+
+.look .navigation .next:hover {
+	background-position: -62px -42px;
+}
+
+.look .navigation .pages {
+	position: absolute;
+	left: 50%;
+	width: 73px;
+	margin: 0 0 0 -36px;
+	padding: 12px 0 0 0;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 0.875em;
+	text-align: center;
+	color: #000;
+	background: #fff;
+}
+
+.look .navigation .pages dt {
+	display: none;
+}
+
+.look .navigation .pages dd {
+	display: inline;
+}
+
+.look .navigation .pages dd.current:after {
+	content: " /";
+}
+
+.look .navigation .background {
+	height: 50%;
+	border-width: 0 0 1px 0;
+	border-color: #e2d7be;
+	border-style: solid;
+}
+
+.looks .back-button {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	display: block;
+	margin-top: -25px;
+	margin-left: -13px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.looks .back-button .background {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 18px solid #c32020;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.looks .back-button .label {
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 100%;
+	margin: -6px 0 0 0;
+	z-index: 5;
+	color: #fff;
+	font-size: 0.625em;
+}
+
+.looks .back-button .icon {
+	float: left;
+	display: block;
+	width: 4px;
+	height: 4px;
+	margin: 3px 3px 0 1px;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+	border-color: #fff;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.looks .back-button .copy {
+	float: left;
+}
+
+/*---------------------------------------------*/
+/* Social Links
+/*---------------------------------------------*/
+.social-pages {
+	position: absolute;
+	right: 24px;
+	top: 20px;
+	z-index: 30;
+}
+
+.social-pages h1 {
+	float: left;
+	padding: 4px 4px 0 0;
+	font-size: 1em;
+	font-weight: normal;
+	color: #000;
+}
+
+.social-pages ul {
+	float: left;
+	list-style: none;
+}
+
+.social-pages li {
+	float: left;
+	display: inline;
+}
+
+.social-pages a {
+	display: block;
+	width: 28px;
+	height: 27px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/global/social-icons.png') no-repeat 0 0;
+}
+
+.social-pages a:hover {
+	background-position: 0 -27px;
+}
+
+.social-pages .twitter {
+	background-position: -28px 0;
+}
+.social-pages .twitter:hover {
+	background-position: -28px -27px;
+}
+
+.social-pages .instagram {
+	background-position: -56px 0;
+}
+.social-pages .instagram:hover {
+	background-position: -56px -27px;
+}
+
+/*---------------------------------------------*/
+/* Intro
+/*---------------------------------------------*/
+.intro {
+	position: relative;
+	padding: 15px 0 0 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+.intro-content {
+	position: relative;
+	padding: 25px 0 0 0;
+}
+
+.intro .back-to-video {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	float: left;
+	z-index: 5;
+}
+
+.intro .back-to-video a {
+	position: relative;
+	right: 50%;
+	float: left;
+	display: block;
+	width: 851px;
+	margin: 0 auto;
+	padding: 7px 0 12px 0;
+	color: #000;
+	text-align: center;
+	font-size: 0.875em;
+	text-decoration: none;
+	background: #f3f2e9;
+	-webkit-transition: background-color 0.15s linear;
+	transition: background-color 0.15s linear;
+}
+
+.intro .back-to-video a:hover {
+	background: #dad7c8;
+}
+
+.intro .center-panel {
+	position: relative;
+	z-index: 2;
+	width: 655px;
+	margin: 0 auto 0 auto;
+	padding: 52px 98px 59px 98px;
+	text-align: center;
+	background: #fff;
+}
+
+.page-permalink .intro .center-panel {
+	padding-top: 38px;
+	padding-bottom: 36px;
+}
+
+.intro .center-panel:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.intro .center-panel h1 {
+	padding: 0 0 3px 0;
+	font-family: "alex_brushregular", Georgia, serif;
+	font-size: 2.5em;
+	color: #3b3b3b;
+	font-weight: 400;
+	background: transparent url('../images/global/small-divider.gif') no-repeat 50% 100%;
+}
+
+.page-permalink .intro  .center-panel h1 {
+	display: block;
+	width: 273px;
+	height: 179px;
+	margin: 0 auto;
+	padding: 0 0 25px 0;
+	background: transparent;
+}
+
+.intro h2 {
+	padding: 14px 0 21px 0;
+	color: #000;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.intro p {
+	padding: 0 0 5px 0;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 1em;
+}
+
+.intro p a {
+	color: #4e4e4e;
+	text-decoration: underline;
+	-webkit-transition: color 0.15s linear;
+	transition: color 0.15s linear;
+}
+
+.intro p a:hover {
+	color: #000;
+}
+
+.page-permalink .intro p {
+	padding: 0;
+	color: #4e4e4e;
+}
+
+.intro .discover-link {
+	margin-top: 22px;
+}
+
+.intro .discover-link a {
+	padding: 0 0 0 15px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	line-height: 1.5em;
+	background: transparent url('../images/permalink/permalink-bg-dark.png') no-repeat 0 4px;
+}
+
+.intro .discover-link a:hover {
+	color: #676767;;
+	background-position: 0 -46px;
+}
+
+.intro .enter-button {
+	position: relative;
+	left: 50%;
+	float: left;
+	margin-top: 39px;
+}
+
+.intro .enter-button a {
+	position: relative;
+	right: 50%;
+	float: left;
+	padding: 3px;
+	color: #fff;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #c32020;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.intro .enter-button a:hover {
+	background: #a41616;
+}
+
+.intro .enter-button span {
+	display: block;
+	padding: 18px 33px 17px 33px;
+	border: 1px solid #c26257;
+	background: #c32020;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.intro .enter-button span:hover {
+	border-color: #af3a3a;
+	background: #a41616;
+}
+
+.scrolling-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.scrolling-background img {
+	position: absolute;
+	bottom: -120%;
+	width: 100%;
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - Basics
+/*---------------------------------------------*/
+.column-one-third {
+	float: left;
+	width: 33.3%;
+}
+
+.column-one-third img,
+.column-two-thirds img,
+.column-half img {
+	
+}
+
+.column-two-thirds {
+	float: left;
+	width: 66.6%;
+}
+
+.column-half {
+	float: left;
+	width: 50%;
+}
+
+.cinemagraphs {
+	position: relative;
+	width: 100%;
+}
+
+.cinemagraph-content {
+	position: relative;
+	width: 90%;
+	min-width: 1000px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cinemagraphs:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cinemagraphs article {
+	width: 853px;
+	margin: 0 auto;
+}
+
+.cinemagraphs article:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cinemagraphs>.divider {
+	width: 100%;
+	margin: 0 auto;
+	height: 420px;
+	overflow: hidden;
+}
+
+.parallax .image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.cinemagraphs .divider img {
+	position: absolute;
+	bottom: -120%;
+	width: 100%;
+}
+
+.cinemagraph {
+	display: table;
+}
+
+.cinemagraph .hotspot-app {
+	position: relative;
+}
+
+.cinemagraph:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cinemagraph .cinemagraph-panel,
+.cinemagraph .details {
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+	width: 33.3%;
+	height: 100%;
+}
+
+.cinemagraph .details {
+	background: #fff;
+}
+
+.cinemagraph .logo {
+	position: absolute;
+	left: 11px;
+	top: 15px;
+	display: none;
+}
+
+.cinemagraph .logo.right {
+	left: auto;
+	right: 11px;
+}
+
+.cinemagraph .hotspots {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	list-style: none;
+	z-index: 10;
+}
+
+.cinemagraph .hotspots li {
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+
+.cinemagraph .hotspots a {
+	display: block;
+	width: 54px;
+	height: 54px;
+	margin-left: -27px;
+	margin-top: -27px;
+	text-indent: 105%;
+	font-size: 0.01em;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/global/hotspot.png') no-repeat 0 0;
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - Slideshow
+/*---------------------------------------------*/
+.cinemagraph .product-slideshow {
+	/* TEMP */
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	background: #f2f1e8;
+}
+
+.cinemagraph .product-slideshow .close-button {
+	position: absolute;
+	/*right: 28px;
+	top: 31px;*/
+	right: 0;
+	top: 0;
+	z-index: 101;
+	padding: 31px 52px 0 0;
+	font-size: 0.75em;
+	color: #000;
+	min-height: 15px;
+	text-decoration: none;
+	background: transparent url('../images/global/cinemagraph-slideshow-close.png') no-repeat 100% 31px;
+}
+
+.cinemagraph .product-slideshow .close-button:hover {
+	color: #676767;
+	background-position: 100% -19px;
+}
+
+.cinemagraph .product-slideshow .slides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	height: 100%;
+}
+
+.cinemagraph .product-slideshow .slides li {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #f2f1e8;
+}
+
+.cinemagraph .product-slideshow .slides li:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cinemagraph .product-slideshow .slides li:first-child {
+	position: relative;
+	display: block;
+	left: 0;
+}
+
+.cinemagraph .product-slideshow .slide-image {
+	width: 100%;
+	padding: 3px 0 25px 0;
+	text-align: center;
+}
+
+.cinemagraph .product-slideshow img {
+
+}
+
+.cinemagraph .product-slideshow .slide-details {
+	float: left;
+	width: 170px;
+	padding: 3px 10px 0 71px;
+	background: transparent;
+}
+
+.cinemagraph .product-slideshow dl {
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
+.cinemagraph .product-slideshow dt {
+	display: none;
+}
+
+.cinemagraph .product-slideshow dd {
+	display: inline;
+}
+
+.cinemagraph .product-slideshow .current:after {
+	content: " /";
+}
+
+.cinemagraph .product-slideshow .total:after {
+	content: " -";
+}
+
+.cinemagraph .product-slideshow h3 {
+	padding: 2px 0 0 0;
+	font-family: "ProximaNovaBold", "Helvetica", Arial, sans-serif;
+	font-size: 1.25em;
+	font-weight: 400;
+	line-height: 1em;
+}
+
+.cinemagraph .product-slideshow .description {
+	float: left;
+	width: 260px;
+}
+
+.cinemagraph .product-slideshow p {
+	font-size: 0.875em;
+	line-height: 1.438em;
+	color: #000;
+}
+
+.cinemagraph .product-slideshow a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.cinemagraph .product-slideshow a:hover {
+	color: #676767;
+}
+
+.cinemagraph .product-slideshow .navigation {
+	list-style: none;
+}
+
+.cinemagraph .product-slideshow .navigation li {
+	
+}
+
+.cinemagraph .product-slideshow .navigation li a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	width: 63px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #f2f1e8 url('../images/global/cinemagraph-nav-previous.png') no-repeat 0 50%;
+}
+
+.cinemagraph .product-slideshow .navigation li a:hover {
+	background-position: -100px 50%;
+}
+
+.cinemagraph .product-slideshow .navigation .next {
+	right: 0;
+	left: auto;
+	background-image: url('../images/global/cinemagraph-nav-next.png');
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - About Panel
+/*---------------------------------------------*/
+.cinemagraph .about-panel {
+	width: 100%;
+	text-align: center;
+}
+
+.cinemagraph .about-panel .date dt {
+	display: none;
+}
+
+.cinemagraph .about-panel .date dd {
+	padding: 0 0 3px 0;
+	font-family: "alex_brushregular", "Helvetica", Arial, sans-serif;
+	font-size: 1.563em;
+	color: #000;
+	background: transparent url('../images/global/small-divider-wide.gif') no-repeat 50% 100%;
+}
+
+.cinemagraph .about-panel h1 {
+	padding: 132px 0 0 0;
+	font-family: "ProximaNovaBold", "Helvetica", Arial, sans-serif;
+	font-size: 1.875em;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.cinemagraph .about-panel.active h1 {
+	padding: 4px 0 0 0;
+}
+
+.cinemagraph .share-success {
+	display: none;
+	margin: 22px 20px 31px 20px;
+	padding: 3px;
+	color: #fff;
+	text-align: center;
+	background: #cb9e24;
+}
+
+.cinemagraph .share-success p {
+	padding: 18px 10px 18px 10px;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.25em;
+	border: 1px solid #d5af47;
+	background: #cb9e24;
+}
+
+.cinemagraph .share-success.inactive {
+	margin-top: 107px;
+	padding: 2px;
+}
+
+.cinemagraph .share-success.inactive p {
+	padding-top: 6px;
+	padding-bottom: 5px;
+	font-size: 0.625em;
+}
+
+.cinemagraph .about-panel .share {
+	margin: 22px 20px 31px 20px;
+	padding: 3px;
+	color: #fff;
+	text-align: center;
+	background: #053600;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.cinemagraph .about-panel .share:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.cinemagraph .about-panel .share .options {
+	position: relative;
+	border: 1px solid #164b11;
+	background: #053600;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.cinemagraph .about-panel .share .options:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cinemagraph .about-panel .share-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	margin: 0;
+	padding: 18px 10px 18px 10px;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.25em;
+	background: #053600;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.cinemagraph .about-panel .share:hover {
+	background: #0d4607;
+}
+
+.cinemagraph .about-panel .share:hover .share-button,
+.cinemagraph .about-panel .share:hover .options {
+	border-color: #215b1b;
+	background: #0d4607;
+}
+
+.cinemagraph .about-panel .share .links {
+	position: relative;
+	left: 50%;
+	float: left;
+	list-style: none;
+}
+
+.cinemagraph .about-panel .share li {
+	position: relative;
+	right: 50%;
+	float: left;
+	display: inline;
+}
+
+.cinemagraph .about-panel .share li a {
+	display: block;
+	width: 43px;
+	height: 53px;
+	background: transparent url('../images/global/cinemagraph-share-icons.png') no-repeat 0 0;
+}
+
+.cinemagraph .about-panel .share li span {
+	display: block;
+	width: 43px;
+	height: 53px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+	background: transparent url('../images/global/cinemagraph-share-icons.png') no-repeat 0 0;
+}
+
+.cinemagraph .about-panel .share li a:hover span {
+	opacity: 0;
+}
+
+.cinemagraph .about-panel .share li .twitter {
+	background-position: -43px -53px;
+}
+.cinemagraph .about-panel .share li .twitter span {
+	background-position: -43px 0;
+}
+
+.cinemagraph .about-panel .share li .tumblr {
+	background-position: -86px -53px;
+}
+.cinemagraph .about-panel .share li .tumblr span {
+	background-position: -86px 0;
+}
+
+.cinemagraph .about-panel .share li .email {
+	background-position: -129px -53px;
+}
+.cinemagraph .about-panel .share li .email span {
+	background-position: -129px 0;
+}
+
+.cinemagraph .about-panel .permalink {
+	float: left;
+	line-height: 1.5em;
+	margin: 0 20px 0 20px;
+	padding: 0 0 0 15px;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	color: #000;
+	text-decoration: none;
+	background: transparent url('../images/home/permalink-bg.png') no-repeat 0 5px;
+}
+
+.cinemagraph .about-panel .permalink:hover {
+	color: #676767;
+	background-position: 0 -45px
+}
+
+/* Share panel on inactive cinemagraphs */
+.cinemagraph .about-panel .share-inactive {
+	width: 190px;
+	margin: 100px auto 0 auto;
+	padding: 20px 0 20px 25px;
+	background: transparent url('../images/global/cinemagraph-share-bg.png') no-repeat 0 29px;
+}
+
+.cinemagraph .about-panel .share-inactive:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.cinemagraph .about-panel .share-inactive .options {
+	position: relative;
+	padding: 0 0 0 27px;
+}
+
+.cinemagraph .about-panel .share-inactive .share-button {
+	display: block;
+	padding: 9px 0;
+	font-size: 0.625em;
+	text-transform: uppercase;
+	color: #c02420;
+	background: #fff;
+}
+
+.cinemagraph .about-panel .share-inactive .links {
+	display: block;
+	list-style: none;
+	z-index: 9;
+}
+
+.cinemagraph .about-panel .share-inactive .links li {
+	float: left;
+	padding: 0 8px 0 7px;
+}
+
+.cinemagraph .about-panel .share-inactive .links a {
+	display: block;
+	width: 28px;
+	height: 27px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/global/social-icons.png') no-repeat 0 0;
+}
+.cinemagraph .about-panel .share-inactive .links a:hover {
+	background-position: 0 -27px;
+}
+
+.cinemagraph .about-panel .share-inactive .links a.twitter {
+	background-position: -28px -0;
+}
+.cinemagraph .about-panel .share-inactive .links a.twitter:hover {
+	background-position: -28px -27px;
+}
+
+.cinemagraph .about-panel .share-inactive .links a.tumblr {
+	background-position: -84px -0;
+}
+.cinemagraph .about-panel .share-inactive .links a.tumblr:hover {
+	background-position: -84px -27px;
+}
+
+.cinemagraph .about-panel .share-inactive .links a.email {
+	background-position: -112px -0;
+}
+.cinemagraph .about-panel .share-inactive .links a.email:hover {
+	background-position: -112px -27px;
+}
+
+.cinemagraph .about-panel .start-date {
+	margin: 13px 0 0 0;
+	padding: 23px 0 0 0;
+	color: #000;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	background: transparent url('../images/global/small-divider-wide.gif') no-repeat 50% 0;
+}
+
+.cinemagraph .about-panel .start-date b {
+	padding: 3px 0 0 0;
+	display: block;
+	font-family: "alex_brushregular", Georgia, serif;
+	font-weight: 400;
+	font-size: 2.083em;
+	text-transform: none;
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - Email Panel
+/*---------------------------------------------*/
+.cinemagraph .email-panel {
+	/* TEMP */
+	display: none;
+	position: relative;
+	height: 426px;
+}
+
+.cinemagraph .email-panel .close-button {
+	position: absolute;
+	right: 0;
+	top: 18px;
+	width: 35px;
+	height: 43px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/global/cinemagraph-slideshow-close.png') no-repeat 0 0;
+}
+
+.cinemagraph .email-panel .close-button:hover {
+	background-position: 0 -50px;
+}
+
+.cinemagraph .email-panel h1 {
+	padding: 16px 0 0 0;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 1em;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.cinemagraph .email-panel form {
+	margin: 0 18px;
+	padding: 7px 0 0 0;
+}
+
+.cinemagraph .email-panel fieldset {
+	border: 0;
+}
+
+.cinemagraph .email-panel legend {
+	display: none;
+}
+
+.cinemagraph .email-panel label {
+	display: block;
+	width: 100%;
+	padding: 0 0 5px 0;
+	font-size: 1em;
+	color: #000;
+}
+
+.cinemagraph .email-panel fieldset input {
+	width: 212px;
+	margin: 0 0 6px 0;
+	padding: 9px 6px 7px 6px;
+	color: #000;
+	font-size: 0.75em;
+	font-style: italic;
+	border: 1px solid #d7d3d1;
+}
+
+.cinemagraph .email-panel fieldset input.error {
+	color: #a41616;
+	border-color: #a41616;
+}
+
+.cinemagraph .email-panel fieldset input.filled-in {
+	font-style: normal;
+}
+
+.cinemagraph .email-panel .checkbox-field {
+	padding: 5px 0 5px 0;
+}
+
+.cinemagraph .email-panel .checkbox-field label {
+	float: left;
+	width: auto;
+	padding: 0 0 0 6px;
+	font-size: 0.75em;
+	font-style: italic;
+}
+
+.cinemagraph .email-panel .checkbox-field.error label {
+	color: #a41616;
+}
+
+.cinemagraph .email-panel .checkbox-field label a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.cinemagraph .email-panel .checkbox-field label a:hover {
+	color: #676767;
+}
+
+.cinemagraph .email-panel .checkbox-field input {
+	display: none;
+	width: auto;
+}
+
+.cinemagraph .email-panel .dummy-checkbox {
+	float: left;
+	display: block;
+	width: 14px;
+	height: 14px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/global/checkbox-bg.png') no-repeat 0 0;
+}
+
+.cinemagraph .email-panel .dummy-checkbox:hover {
+	background-position: 0 -14px;
+}
+
+.cinemagraph .email-panel .dummy-checkbox.active {
+	background-position: 0 -28px;
+}
+
+.cinemagraph .email-panel .error .dummy-checkbox {
+	background-position: 0 -42px;
+}
+
+.cinemagraph .email-panel .submit-button {
+	width: 112px;
+	margin: 14px auto 0 auto;
+	padding: 3px;
+	background: #053600;
+	-webkit-transition: background-color 0.15s linear;
+	transition: background-color 0.15s linear;
+}
+
+.cinemagraph .email-panel .submit-button input {
+	display: block;
+	width: 112px;
+	margin: 0;
+	padding: 9px 11px 8px 11px;
+	color: #fff;
+	font-size: 0.875em;
+	text-transform: uppercase;
+	border: 1px solid #164b11;
+	background: #053600;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	-webkit-transition: background-color 0.15s linear;
+	transition: background-color 0.15s linear;
+}
+
+.cinemagraph .email-panel .submit-button:hover {
+	background: #042800;
+}
+
+.cinemagraph .email-panel .submit-button:hover input {
+	background: #042800;
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - Email Success
+/*---------------------------------------------*/
+.cinemagraph .result-screen {
+	display: none;
+	text-align: center;
+}
+
+.cinemagraph .result-screen h2 {
+	margin: 0 0 -3px 0;
+	padding: 103px 0 0 0;
+	color: #3b3b3b;
+	font-family: "alex_brushregular", Georgia, serif;
+	font-size: 3.75em;
+	font-weight: 400;
+}
+
+.cinemagraph .result-screen p {
+	padding: 0 30px;
+	color: #4e4e4e;
+	font-size: 1em;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+
+}
+
+.cinemagraph .result-screen a {
+	color: #4e4e4e;
+	text-decoration: underline;
+}
+
+.cinemagraph .result-screen a:hover {
+	color: #000;
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - Follow Us Panel
+/*---------------------------------------------*/
+.cinemagraphs .row {
+	display: table;
+}
+
+.cinemagraphs .row .column-half {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+.cinemagraphs .follow-us-panel {
+	text-align: center;
+	background: #fff;
+}
+
+.cinemagraphs .follow-us-panel h1 {
+	margin-bottom: -5px;
+	font-family: "alex_brushregular", Georgia, serif;
+	font-size: 2.813em;
+	color: #000;
+}
+
+.cinemagraphs .follow-us-panel p {
+	width: 271px;
+	margin: 0 auto;
+	font-size: 0.813em;
+	color: #000;
+	line-height: 1.438em;
+	text-transform: uppercase;
+}
+
+.cinemagraphs .follow-us-panel ul {
+	position: relative;
+	left: 50%;
+	float: left;
+	padding: 37px 0 0 0;
+}
+
+.cinemagraphs .follow-us-panel li {
+	position: relative;
+	right: 50%;
+	float: left;
+	display: inline;
+}
+
+.cinemagraphs .follow-us-panel span,
+.cinemagraphs .follow-us-panel a {
+	display: block;
+	width: 50px;
+	height: 38px;
+	font-size: 0.01em;
+	text-indent: 105%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: transparent url('../images/home/follow-us-share-icons.png') no-repeat 0 -38px;
+}
+.cinemagraphs .follow-us-panel span {
+	background-position: 0 0;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+.cinemagraphs .follow-us-panel a.twitter {
+	background-position: -50px -38px;
+}
+.cinemagraphs .follow-us-panel .twitter span {
+	background-position: -50px 0;
+}
+
+.cinemagraphs .follow-us-panel a.instagram {
+	background-position: -100px -38px;
+}
+.cinemagraphs .follow-us-panel .instagram span {
+	background-position: -100px 0;
+}
+
+.cinemagraphs .follow-us-panel a:hover span {
+	opacity: 0;
+}
+
+/*---------------------------------------------*/
+/* Cinemagraphs - Right Hand Nav
+/*---------------------------------------------*/
+.cinemagraphs nav {
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+.cinemagraphs nav.fixed {
+	position: fixed;
+	width: 90%;
+	height: 1px;
+	overflow: visible;
+	min-width: 1000px;
+	max-width: 1200px;
+	left: auto;
+	right: auto;
+	z-index: 200;
+}
+
+.cinemagraphs nav ol {
+	float: right;
+	list-style: none;
+}
+
+.cinemagraphs nav li {
+	position: relative;
+}
+
+.cinemagraphs nav a {
+	color: #756d6d;
+	text-decoration: none;
+	-webkit-transition: color 0.15s linear;
+	transition: color 0.15s linear;
+}
+
+.cinemagraphs nav .current {
+	color: #a07f26;
+}
+
+.cinemagraphs nav a:hover {
+	color: #000;
+}
+
+.cinemagraphs nav a.active {
+	color: #0c5504;
+}
+
+.cinemagraphs nav .copy {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 1em;
+}
+
+.cinemagraphs nav .day {
+	display: block;
+	font-size: 0.75em;
+}
+
+.cinemagraphs nav .month {
+	display: block;
+	font-size: 0.625em;
+}
+
+.cinemagraphs nav .background {
+	position: relative;
+	z-index: 1;
+	width: 33px;
+	height: 33px;
+	border: 1px solid #756d6d;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transition: border-color 0.15s linear;
+	transition: border-color 0.15s linear;
+}
+
+.cinemagraphs nav .current .background {
+	border-color: #a07f26;
+}
+
+.cinemagraphs nav a:hover .background {
+	border-color: #000;
+}
+
+.cinemagraphs nav a.active .background {
+	border-color: #053600;
+}
+
+.cinemagraphs nav .divider {
+	width: 1px;
+	height: 13px;
+	margin: 14px 0 13px 17px;
+	background: #b4a6a6;
+}
+
+/*---------------------------------------------*/
+/* Permalink Page
+/*---------------------------------------------*/
+.prizes {
+	width: 709px;
+	margin: 0 auto 60px auto;
+	padding: 0 71px 42px 71px;
+	background: #fff;
+}
+
+.prizes:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.prizes h1 {
+	padding: 42px 0 22px 0;
+	font-family: "ProximaNovaLight", "Helvetica", Arial, sans-serif;
+	font-size: 1.25em;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.prizes p {
+	padding: 0 91px;
+	color: #4e4e4e;
+	font-size: 1em;
+	line-height: 1.313em;
+	text-align: center;
+}
+
+.prizes ol {
+	padding: 70px 0 0 0;
+	list-style: none;
+}
+
+.prizes li {
+	display: table;
+}
+
+.prizes .product-image {
+	display: table-cell;
+	vertical-align: middle;
+	width: 284px;
+}
+
+.prizes .details {
+	display: table-cell;
+	vertical-align: middle;
+	width: 426px;
+	padding: 0 71px 0 0;
+}
+
+.prizes .odd .details {
+	padding: 0 0 0 71px;
+}
+
+.prizes h2 {
+	padding: 0 0 1px 0;
+	font-family: "alex_brushregular", Georgia, serif;
+	color: #c32020;
+	font-size: 1.875em;
+	font-weight: 400;
+}
+
+.prizes h3 {
+	padding: 0 0 12px 0;
+	font-size: 1.25em;
+	font-family: "ProximaNovaBold", "Helvetica", Arial, sans-serif;
+	font-weight: 400;
+}
+
+.prizes h3 a {
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: color 0.15s linear;
+	transition: color 0.15s linear;
+}
+
+.prizes h3 a:hover {
+	color: #676767;
+}
+
+.prizes li p {
+	padding: 0;
+	color: #000;
+	font-size: 0.938em;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.prizes .experience-button {
+	position: relative;
+	left: 50%;
+	float: left;
+	padding: 90px 0 0 0;
+}
+
+.prizes .experience-button a {
+	position: relative;
+	right: 50%;
+	float: left;
+	display: block;
+	padding: 3px;
+	color: #fff;
+	font-size: 0.813em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #a41616;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.prizes .experience-button span {
+	display: block;
+	padding: 21px 20px 18px 20px;
+	border: 1px solid #af3a3a;
+	background: #a41616;
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+.prizes .experience-button a:hover {
+	background: #a4842a;
+}
+
+.prizes .experience-button a:hover span {
+	border-color: #b29a5b;
+	background: #a4842a;
+}
