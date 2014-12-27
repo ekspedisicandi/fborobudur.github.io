@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=980" />
+<meta property="og:image" content="images/facebook.png"/>
+<meta property="fb:app_id" content="116304178453959"/>
+<meta property="og:type" content="university"/>
+
+<title>24-IDWEBDesigner</title>
+<link rel="stylesheet" href="css/font-face.css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+var isIE8 = false;
+</script>
+<!--[if IE 8]>
+<style type="text/css">
+.player { height:296px; padding:30px 48px 0 }
+</style>
+<script type="text/javascript">
+isIE8 = true;
+</script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="js/jquery.pulse.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-BubbleEngine.js"></script> -->
+<script type="text/javascript" src='js/all.js'></script>
+<script type="text/javascript">
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="js/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script type="text/javascript">
+//Prevent touch scrolling
+document.ontouchmove = function(e){ 
+    e.preventDefault(); 
+}
+	
+function moveToScene(wHeight, sHeight) {
+	if(wHeight > 600) {
+		var position = sHeight - ((wHeight - 600) / 2);
+	} else {
+		var position = sHeight + ((600 - wHeight) / 2);
+	}
+	
+	$.scrollTo(position, 0, {axis:'y', duration:3000, easing:'sceneChange'});
+	
+	//$('body').animate({scrollTop:position}, 3000, 'sceneChange');
+}
+
+function postionHeader(wHeight)
+{
+	if(wHeight > 600) {
+		oTop = 25 + ((wHeight - 600) / 2);
+	} else {
+		oTop = 20;
+	}
+	
+	$('#head').css('padding-top',oTop);
+}
+
+function sceneOneIn()
+{
+	$('#scene_1 .star').fadeTo(1500, 1);
+	$('#scene_1 .star').pulse({
+		opacity: [0.3,1]
+	}, {
+		times: 999999,
+		duration:2500
+	});
+}
+
+function sceneOneOut()
+{
+	$('#scene_1 .star').stop();	
+	$('#scene_1 .star').fadeTo(1000, 0);
+}
+
+function sceneTwoIn()
+{
+	$('#scene_2 .star').fadeTo(1500, 1);
+	$('#scene_2 .firework_1').fadeTo(1000, 1);
+	$('#scene_2 .firework_2').delay(300).fadeTo(1000, 1);
+	$('#scene_2 .firework_3').delay(600).fadeTo(1000, 1);
+	$('#scene_2 .firework_4').delay(900).fadeTo(1000, 1);
+}
+
+function sceneTwoOut()
+{
+	$('#scene_2 .star').fadeTo(1000, 0);
+	$('#scene_2 .firework_1').fadeTo(1000, 0);
+	$('#scene_2 .firework_2').fadeTo(1000, 0);
+	$('#scene_2 .firework_3').fadeTo(1000, 0);
+	$('#scene_2 .firework_4').fadeTo(1000, 0);
+}
+
+function sceneThreeIn()
+{
+	$('#scene_3 .star').fadeTo(1500, 1);
+	
+	sceneThreeIconOne();
+	sceneThreeIconTwo();
+	sceneThreeIconThree();
+	sceneThreeIconFour();
+	
+	window.iconOneInt = setInterval(function(){
+		sceneThreeIconOne();
+	}, 8000);
+	
+	window.iconTwoInt = setInterval(function(){
+		sceneThreeIconTwo();
+	}, 8000);
+	
+	window.iconThreeInt = setInterval(function(){
+		sceneThreeIconThree();
+	}, 8000);
+	
+	window.iconFourInt = setInterval(function(){
+		sceneThreeIconFour();
+	}, 8000);
+}
+
+function sceneThreeOut()
+{
+	$('#scene_3 .star').fadeTo(1000, 0);
+	
+	clearInterval(window.iconOneInt);
+	clearInterval(window.iconTwoInt);
+	clearInterval(window.iconThreeInt);
+	clearInterval(window.iconFourInt);
+}
+
+function sceneThreeIconOne()
+{
+	$('#scene_3 .star_9').pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_10').delay(1800).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_11').delay(4000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_12').delay(4200).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+}
+
+function sceneThreeIconTwo()
+{
+	$('#scene_3 .star_13').delay(1000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_14').delay(2000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_15').delay(4000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_16').delay(5500).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+}
+
+function sceneThreeIconThree()
+{
+	$('#scene_3 .star_5').delay(600).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_6').delay(1800).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_7').delay(4000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_8').delay(4800).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+}
+
+function sceneThreeIconFour()
+{
+	$('#scene_3 .star_1').pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_2').delay(4000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_3').delay(5800).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+	
+	$('#scene_3 .star_4').delay(6000).pulse({
+		opacity: [0,1]
+	}, {
+		times: 1,
+		duration:800
+	});
+}
+
+function sceneFourIn()
+{
+	$('#scene_4 .star').fadeTo(1500, 1);
+	$('#scene_4 .background').animate({ bottom: '+=50'}, 1500);
+	// sceneFourBeep();
+	// window.beepInt = setInterval(function(){
+	// 	sceneFourBeep();
+	// }, 8000);
+	
+	// $('#scene_4 .eyes').pulse({
+	// 	opacity: [0.3,1]
+	// }, {
+	// 	times: 999999,
+	// 	duration:2000
+	// });
+}
+
+function sceneFourOut()
+{
+	$('#scene_4 .star').fadeTo(1000, 0);
+	$('#scene_4 .background').animate({ bottom: '-=50'}, 1500);
+	// clearInterval(window.beepInt);
+	// $('#scene_4 .eyes').stop();
+}
+
+function sceneFourBeep()
+{
+	$('#scene_4 .beep_large').pulse({
+		opacity: [1,0]
+	}, {
+		times: 1,
+		duration:500
+	});
+		
+	$('#scene_4 .beep_small').delay(500).pulse({
+		opacity: [1,0]
+	}, {
+		times: 2,
+		duration:500
+	});
+		
+	$('#scene_4 .beep_large').delay(1500).pulse({
+		opacity: [1,0]
+	}, {
+		times: 1,
+		duration:500
+	});
+}
+
+function sceneFiveIn()
+{
+	$('#scene_5 .star').fadeTo(1500, 1);
+	$('#scene_5 .fc').animate({ left: '+=707', easing: 'easeInQuad'}, 1000);
+	$('#scene_5 .moon').animate({ bottom: '+=50'}, 1500);
+}
+
+function sceneFiveOut()
+{
+	$('#scene_5 .star').fadeTo(1000, 0);
+	$('#scene_5 .moon').animate({ bottom: '-=50'}, 1500);
+	$('#scene_5 .fc').animate({ left: '-=707'}, 500);
+}
+
+function sceneSixIn()
+{
+	$('#scene_6 .star').fadeTo(1500, 1);
+	$('#scene_6 .moon').animate({ bottom: '+=50'}, 1500);
+	
+	sceneSixBurglar();
+	
+	window.burglarInt = setInterval(function(){
+		sceneSixBurglar();
+	}, 20000);
+}
+
+function sceneSixOut()
+{
+	$('#scene_6 .star').fadeTo(1000, 0);
+	$('#scene_6 .moon').animate({ bottom: '-=50'}, 1500);
+	
+	clearInterval(window.burglarInt);
+	
+	$('#scene_6 .legs').css({'bottom' :'158', 'left':'256'});
+}
+
+function sceneSixBurglar()
+{	
+	$('#scene_6 .legs').delay(4000).animate({ bottom: '+=5'}, 300).animate({ bottom: '-=5'}, 300).animate({ bottom: '+=5'}, 300).animate({ bottom: '-=5'}, 300);
+	
+	$('#scene_6 .light_top').delay(6000).show(1);
+	$('#scene_6 .light_bottom').delay(6600).show(1);
+	
+	$('#scene_6 .light_top').delay(14000).hide(1);
+	$('#scene_6 .light_bottom').delay(14600).hide(1);
+}
+
+function sceneSevenIn()
+{
+	$('#scene_7 .star').fadeTo(1500, 1);
+	$('#scene_7 .fc').animate({ left: '+=200'}, 1500);
+}
+
+function sceneSevenOut()
+{
+	$('#scene_7 .star').fadeTo(1000, 0);
+	$('#scene_7 .fc').animate({ left: '-=200'}, 1500);
+}
+
+function sceneEightIn()
+{
+	$('#scene_8 .castle').animate({ top: '-=50'}, 1500);
+	$('#scene_8 .tower_blocks').animate({ top: '-=50'}, 1500);
+	$('#scene_8 .star').fadeTo(1500, 1);
+	$('#scene_8 .star').pulse({
+		opacity: [0.3,1]
+	}, {
+		times: 999999,
+		duration:2500
+	});
+}
+
+function sceneEightOut()
+{
+	$('#scene_8 .castle').animate({ top: '+=50'}, 1500);
+	$('#scene_8 .tower_blocks').animate({ top: '+=50'}, 1500);
+	$('#scene_8 .star').stop();	
+	$('#scene_8 .star').fadeTo(1000, 0);
+}
+
+function postToFeed() {
+	// @todo - update description 
+	var obj = {
+		method: 'feed',
+		link: 'http://www.lancaster.ac.uk/christmas',
+		picture: 'http://www.lancaster.ac.uk/christmas/images/facebook.png',
+		name: 'Lancaster University',
+		caption: "Season's Greetings from Lancaster",
+		description: 'As 2014 draws to a close, we bring you a selection of short films from across campus, featuring a physical mixtape, the Universe, and World War One...',
+		redirect_uri: 'http://www.lancaster.ac.uk/christmas/'
+	};
+	
+	FB.ui(obj);
+}
+
+$(document).ready(function(){
+	//Build Bubble Machine
+	// var SoapBubbleMachineNumber1 = $('#scene_1').BubbleEngine({
+	// 	particleSizeMin: 0,
+	// 	particleSizeMax: 33,
+	// 	particleSourceX: 805,
+	// 	particleSourceY: -840,
+	// 	particleAnimationDuration: 5000,
+	// 	particleDirection: 'left',
+	// 	particleAnimationDuration: 5000,
+	// 	particleAnimationVariance: 2000,
+	// 	particleScatteringX: 30,
+	// 	particleScatteringY: 60,
+	// 	gravity: -130,
+	// 	imgSource: 'images/scenes/scene_7/bubble.png'
+	// });
+	
+	// SoapBubbleMachineNumber1.addBubbles(8);
+	
+	$.easing.sceneChange = function (x, t, b, c, d, s) {
+        if (s == undefined) s = 1;
+        return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+    };
+	
+	//Hide all the stars
+	$('.star').fadeTo('fast', 0);
+						   
+	//get the height to set postioning
+	var wHeight = window.innerHeight ? window.innerHeight : $(window).height();
+	
+	//set the postion of the header
+	postionHeader(wHeight);
+	
+	//If the window is resized get new height
+	$(window).resize(function() {
+		wHeight = window.innerHeight ? window.innerHeight : $(window).height();
+		postionHeader(wHeight);
+	});
+	
+	moveToScene(wHeight, 1318);
+	
+	/*Way Points*/
+	$('#scene_1').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneOneIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_2').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneOneOut();	
+		}
+		else {
+			sceneTwoOut();
+			sceneOneIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_2').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneTwoIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_3').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneTwoOut();	
+		}
+		else {
+			sceneThreeOut();
+			sceneTwoIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_3').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneThreeIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_4').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneThreeOut();	
+		}
+		else {
+			sceneFourOut();
+			sceneThreeIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_4').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneFourIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_5').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneFourOut();	
+		}
+		else {
+			sceneFiveOut();
+			sceneFourIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_5').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneFiveIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_6').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneFiveOut();	
+		}
+		else {
+			sceneSixOut();
+			sceneFiveIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_6').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneSixIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_7').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneSixOut();	
+		}
+		else {
+			sceneSevenOut();
+			sceneSixIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_7').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneSevenIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#space_8').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneSevenOut();	
+		}
+		else {
+			sceneEightOut();
+			sceneSevenIn();	
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('#scene_8').waypoint(function(event, direction) {
+		if (direction === 'down') {
+			sceneEightIn();
+		}
+	}, {
+	   offset: '50%'
+	});
+	
+	$('a[href$="#scene_1"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 1318);
+		return false;									
+	});
+	$('a[href$="#scene_2"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 2518);
+		return false;									
+	});
+	$('a[href$="#scene_3"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 3715);
+		return false;									
+	});
+	$('a[href$="#scene_4"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 4918);
+		return false;									
+	});
+	$('a[href$="#scene_5"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 6118);
+		return false;									
+	});
+	$('a[href$="#scene_6"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 7368);
+		return false;									
+	});
+	$('a[href$="#scene_7"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 8518);
+		return false;									
+	});
+	$('a[href$="#scene_8"]').click(function(e) {
+		$('.player').remove();
+		$('.read_more').hide();
+		moveToScene(wHeight, 7368);
+		return false;									
+	});
+	
+	$('.btn_video').click(function() {
+		var videoID;
+		var sceneID;
+		if($(this).hasClass('video_2')) {
+			videoID = 'gRcSVukR_G4'; // mixtape video
+			sceneID = '#scene_2';
+		} else if($(this).hasClass('video_3')) {
+			videoID = 'QEcxQZFqkzA'; // impact of WW1 video
+			sceneID = '#scene_3';
+		} else if($(this).hasClass('video_4')) {
+			videoID = 'q1hUF0Fjm_E'; // universe video
+			sceneID = '#scene_4';
+		} else if($(this).hasClass('video_5')) {
+			videoID = 'fbCIP62OuNk';
+			sceneID = '#scene_5';
+		}
+		
+		var html = '<div class="player">';
+		html += '<a href="#" class="btn_close_video"><img src="images/btn_player_close.png" alt="Close Video" class="btn_close"/></a>';
+		if(isIE8) {
+			html += '<div class="youtube"><object width="420" height="236">';
+			html += '<param name="movie" value="https://www.youtube.com/v/'+videoID+'?version=3&autoplay=0&showinfo=0&autohide=1"></param>';
+			html += '<param name="allowScriptAccess" value="always"></param>';
+			html += '<embed src="https://www.youtube.com/v/'+videoID+'?version=3&autoplay=0&showinfo=0&autohide=1" type="application/x-shockwave-flash" allowscriptaccess="always" width="420" height="236"></embed>';
+			html += '</object></div>';
+			html += '<p class="problem">Problems viewing this video? <a href="http://www.youtube.com/watch?v='+videoID+'" target="_blank">Watch on YouTube instead</a></p>';
+		} else {
+			html += '<div class="youtube"><iframe class="youtubeo" width="420" height="236" src="http://www.youtube.com/embed/'+videoID+'?rel=0&autoplay=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe></div>';
+		}
+		html += '</div>';
+		
+		$(sceneID).append(html);
+		
+		return false;									
+	});
+	
+	$('.btn_close_video').live('click', function() {
+		$('youtubeo').hide();
+		$('.player').empty();
+		$('.player').remove();
+		$('.read_more').hide();
+		
+		return false;									
+	});
+	
+	$('.read_more').hide();
+	
+	$('.btn_read_more').click(function() {
+		$(this).parents('.scene').find('.read_more').show();
+		
+		return false;
+	});
+	
+	FB.init({appId: "116304178453959", status: true, cookie: true});
+	//FB.init({appId: "204186309612707", status: true, cookie: true});
+});
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1580171-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<div id="wrap">
+
+<div id="head">
+  <a href="../"><img src="" alt="" class="logo"/></a>
+</div>
+
+<div id="space_1" class="scene">
+
+</div>
+
+<div id="scene_1" class="scene">
+  <div class="text_box">
+  
+    <div class="content">
+      <h1>Borobudur Dibangun UFO</h1>
+      
+      <p style="line-height:21px">Pembangunan Borobudur dibantu UFO. Makhluk dari angkasa luar itu berubah wujud menjadi tokoh dewa yang kemudian dipuja masyarakat purba. Adanya dewa tergambar jelas dari mitologi dan berbagai kitab keagamaan di pusat kebudayaan kuno di Indonesia&hellip;</p>
+    </div>
+  
+
+    
+    <div class="text_next_scene">
+      <a href="#scene_2" class="btn_scene">Mitos Lainnya</a>
+    </div>
+    
+    <a href="#scene_2" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+
+</div>
+
+<div id="space_2" class="scene">
+
+</div>
+
+<div id="scene_2" class="scene">
+  <div class="firework_1 fade_out">
+    <img src="images/scenes/scene_2/firework_1.png" alt="Firework Exploding"/>
+  </div>
+  
+  <div class="firework_2 fade_out">
+    <img src="images/scenes/scene_2/firework_2.png" alt="Firework Exploding"/>
+  </div>
+  
+  <div class="firework_3 fade_out">
+    <img src="images/scenes/scene_2/firework_3.png" alt="Firework Exploding"/>
+  </div>
+  
+  <div class="firework_4 fade_out">
+    <img src="images/scenes/scene_2/firework_4.png" alt="Firework Exploding"/>
+  </div>
+  
+  <div class="text_box">
+  
+    <div class="content">
+      <h1>Dibangun oleh Utusan Tuhan</h1>
+      
+      <p style="line-height:21px">Borobudur Peninggalan Nabi Sulaiman, Nabi yang diberikan keistimewaan dengan kemampuannya menaklukkan seluruh makhluk ciptaan Tuhan. Dengan bantuan jin dipindahkannya istana Ratu Saba ke wilayah kekuasaan Nabi Sulaiman, Borobudur adalah bangunan yang tidak terselesaikan oleh para jin, tempat berkumpulnya Ratu Saba, dan lainnya&hellip;</p>
+      
+      <!-- <p>but what are they actually made of?</p>  -->
+    </div>
+  
+    <a href="#scene_1" class="btn_scene"><img src="images/arrow_up.png" alt="Previous Scene" class="btn_prev_scene"/></a>
+    
+    <div class="text_next_scene">
+      <a href="#scene_1" class="btn_scene">Sebelumnya</a><br/>
+      <a href="#scene_3" class="btn_scene">Mitos Lainnya</a>
+    </div>
+    
+    <a href="#scene_3" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+</div>
+
+<div id="space_3" class="scene">
+
+</div>
+
+<div id="scene_3" class="scene">
+
+  
+  <div class="text_box">
+  
+    <div class="content">
+      <h1>Awal Ajaran Budha Tibet</h1>
+      <p style="line-height:21px">Tibet adalah pusat spiritual Buddha. Kisah diawali dari Atisha seorang pendeta yang membawa gelombang Buddha ke Tibet. Pada tahun 1011 Atisha belajar Buddha di Sriwijaya, dan Tahun 1012, Atisha mengunjungi Candi Borobudur. Ajaran yang ada di Candi Borobudur ia bawa ke Tibet. Jadi akar ajaran Buddha di Tibet sampai sekarang ini berasal dari Candi Borobudur.&hellip;</p>
+    </div>
+  
+    <a href="#scene_2" class="btn_scene"><img src="images/arrow_up.png" alt="Previous Scene" class="btn_prev_scene"/></a>
+    
+    <div class="text_next_scene">
+      <a href="#scene_2" class="btn_scene">Sebelumnya</a><br/>
+      <a href="#scene_4" class="btn_scene">Mitos Lainnya</a>
+    </div>
+    
+    <a href="#scene_4" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+</div>
+
+<div id="space_4" class="scene">
+
+</div>
+
+<div id="scene_4" class="scene">
+  <div class="background">
+    <img src="images/scenes/scene_4/background.png" alt="Background"/>
+  </div>
+
+  <div class="foreground">
+    <img src="images/scenes/scene_4/foreground.png" alt="Foreground"/>
+  </div>
+  
+<!--   <div class="eyes">
+    <img src="images/scenes/scene_4/eyes.png" alt="Robot Eyes"/>
+  </div> -->
+  
+  <div class="beep_small fade_out">
+    <img src="images/scenes/scene_4/beep_small.png" alt="Satalite Beep"/>
+  </div>
+  
+  <div class="beep_large fade_out">
+    <img src="images/scenes/scene_4/beep_large.png" alt="Communications Tower Beep"/>
+  </div>
+    
+  <div class="text_box">
+  
+    <div class="content">
+      <h1>Tanah yang Tidak Diberkati</h1>
+      <p style="line-height:21px">Gunung Merapi meletus dan menimbulkan efek luar biasa. Kawasan jangkauan dampak Merapi sangat luas dan menimbulkan kerusakan yang luar biasa. Letusan Merapi menjadi penyebab dipindahnya pusat kerajaan Mataram Kuno ke Jawa Timur. Hal ini memunculkan pandangan bahwa Pusat Kerajaan Mataram Kuno dibangun diatas tanah yang tidak diberkati.&hellip;</p>
+    </div>
+  
+    <a href="#scene_3" class="btn_scene"><img src="images/arrow_up.png" alt="Previous Scene" class="btn_prev_scene"/></a>
+    
+    <div class="text_next_scene">
+      <a href="#scene_3" class="btn_scene">Sebelumnya</a><br/>
+      <a href="#scene_5" class="btn_scene">Mitos Lainnya</a>
+    </div>
+    
+    <a href="#scene_5" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+</div>
+
+<div id="space_5" class="scene">
+
+</div>
+
+<div id="scene_5" class="scene">
+  <div class="moon">
+    <img src="images/scenes/scene_5/moon.png" alt="Moon"/>
+  </div>
+
+  <div class="foreground">
+    <img src="images/scenes/scene_5/foreground.png" alt="Foreground"/>
+  </div>
+  
+  <div class="fc">
+    <img src="images/scenes/scene_5/fc.png" alt="Father Christmas"/>
+  </div>
+   
+  <div class="text_box">
+  
+    <div class="content content_extra">
+      <h1>Dibangun diatas Danau Purba</h1>
+      <p style="line-height:21px">Daratan Kedu dimana lokasi Borobudur berada menurut legenda Jawa dulunya adalah sebuah danau purba. Borobudur melambangkan bunga teratai yang mengapung di atas permukaan danau. Merapi pada letusan besar tahun 1006 telah menutupi danau Borobudur menjadi kering dan sekaligus menutupi candi ini hingga lenyap dari sejarah.
+Fakta geologi juga memberi dukungan mitos ini, kuat dugaan Borobudur dibangun di tengah danau purba&hellip;</p>
+    </div>
+  
+ 
+    <a href="#scene_4" class="btn_scene"><img src="images/arrow_up.png" alt="Previous Scene" class="btn_prev_scene"/></a>
+    
+    <div class="text_next_scene">
+      <a href="#scene_4" class="btn_scene">Sebelumnya</a><br/>
+      <a href="#scene_8" class="btn_scene">Mitos Lainnya</a>
+    </div>
+    
+    <a href="#scene_8" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+
+
+  <div class="read_more">
+    <a href="#" class="btn_close_video"><img src="images/btn_player_close.png" alt="Close Video" class="btn_close"/></a>
+    <div class="read_more_text">
+      <p>Join us to celebrate our 50th Anniversary with a host of events and activities taking place in Lancaster and around the world.</p>
+      
+      <p><a href="http://www.lancaster.ac.uk/50/" target="_blank">Find out more on the 50th website.</a></p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- <div id="space_6" class="scene">
+
+</div>
+
+<div id="scene_6" class="scene">
+  <div class="moon">
+    <img src="images/scenes/scene_6/moon.png" alt="Moon"/>
+  </div>
+  
+  <div class="legs">
+    <img src="images/scenes/scene_6/legs.png" alt="Father Christmas Legs"/>
+  </div>
+  
+  <div class="fc">
+    <img src="images/scenes/scene_6/fc.png" alt="Father Christmas"/>
+  </div>
+
+  <div class="foreground">
+    <img src="images/scenes/scene_6/foreground.png" alt="Foreground"/>
+  </div>
+  
+  <div class="light_top">
+    <img src="images/scenes/scene_6/light.png" alt="Window Light"/>
+  </div>
+  
+  <div class="light_bottom">
+    <img src="images/scenes/scene_6/light.png" alt="Window Light"/>
+  </div>
+  
+  <div class="text_box">
+    <div class="star">
+      <a href="#scene_7" class="btn_scene"><img src="images/star.png" alt="Guiding Star"/></a>
+    </div>
+  
+    <div class="content">
+      <h2><span>The gift of time</span></h2>
+      
+      <p>Our students will be giving the gift of time to<br/> 
+      elderly people in the local community this Christmas</p>
+    </div>
+  
+    <a href="" class="btn_read_more more_6"><img src="images/btn_read_more.png" alt="Read More" class="btn_more"/></a>
+  
+    <a href="#scene_5" class="btn_scene"><img src="images/arrow_up.png" alt="Previous Scene" class="btn_prev_scene"/></a>
+    
+    <div class="text_next_scene">
+      <a href="#scene_5" class="btn_scene btn_previous">PREV</a><br/>
+      <a href="#scene_7" class="btn_scene btn_next_next">NEXT</a>
+    </div>
+    
+    <a href="#scene_7" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+  
+  <div class="read_more">
+    <a href="#" class="btn_close_video"><img src="images/btn_player_close.png" alt="Close Video" class="btn_close"/></a>
+    <div class="read_more_text">
+      <p>LUSU, Lancaster University Students' Union, strives to provide students with the opportunity to make a positive impact on the local community. Through its community volunteering programme, LUSU offer students the chance to get involved in rewarding projects with local organisations. This is a fantastic way to contribute to the local community whilst allowing students to gain brilliant new skills.</p>
+      
+      <p><a href="http://lusu.co.uk/get-involved/volunteering/community-projects" target="_blank">Find out more on the LUSU website.</a></p>
+    </div>
+  </div>
+</div>
+ -->
+
+<!-- <div id="space_7" class="scene">
+
+</div>
+
+<div id="scene_7" class="scene">
+  <div class="fc">
+    <img src="images/scenes/scene_7/fc.png" alt="Father Christmas"/>
+  </div>
+  
+  <div class="text_box">
+    <div class="star">
+      <a href="#scene_8" class="btn_scene"><img src="images/star.png" alt="Guiding Star"/></a>
+    </div>
+  
+    <div class="content">
+      <h2>We all use more energy<br/>
+      <span>during the winter months,</span></h2>
+      
+      <p>so what can be done to ensure we have enough?</p>
+    </div>
+  
+    <a href="" class="btn_read_more more_7"><img src="images/btn_read_more.png" alt="Read More" class="btn_more"/></a>
+  
+    <a href="#scene_6" class="btn_scene"><img src="images/arrow_up.png" alt="Previous Scene" class="btn_prev_scene"/></a>
+    
+    <div class="text_next_scene">
+      <a href="#scene_6" class="btn_scene btn_previous">PREV</a><br/>
+      <a href="#scene_8" class="btn_scene btn_next_next">NEXT</a>
+    </div>
+    
+    <a href="#scene_8" class="btn_scene"><img src="images/arrow_down.png" alt="Next Scene" class="btn_next_scene"/></a>
+  </div>
+  
+  <div class="read_more">
+    <a href="#" class="btn_close_video"><img src="images/btn_player_close.png" alt="Close Video" class="btn_close"/></a>
+    <div class="read_more_text">
+      <p>Rising energy demands worldwide are calling for both increased energy supply and improved efficiency in usage. Researchers within the Semiconductor Physics &amp; Nanostructures Research Group at Lancaster University are addressing these two areas through the atomic-scale engineering of materials used in solar cells.</p>
+      
+      <p><a href="http://www.lancaster.ac.uk/gallery/quantum-dots/" target="_blank">Explore our web gallery to find out more.</a></p>
+    </div>
+  </div>
+</div> -->
+
+<div id="space_8" class="scene">
+
+</div>
+
+<div id="scene_8" class="scene">
+  <div class="castle">
+    <img src="images/scenes/scene_8/castle.png" alt="Castle"/>
+  </div>
+  
+  <div class="hills">
+    <img src="images/scenes/scene_8/hills.png" alt="Hills"/>
+  </div>
+  
+  <div class="tower_blocks">
+    <img src="" alt=""/>
+  </div>
+  
+  <div class="foreground">
+    <img src="images/scenes/scene_8/foreground.png" alt="Foreground"/>
+  </div>
+  
+  <div class="text_box">
+  
+    <div class="content content_extra" style="top:120px">
+      <h1>Ada lagi lainnya?</h1>
+      
+      <p style="line-height:21px">Hubungi saya jika kamu mengetahui mitos Borobudur lainnya. Sementara ini yang saya ketahui. Kasih tahu dan saya akan menambahkan lainnya&hellip;</p>
+      <br/>
+      
+      <a href="#scene_1" class="btn_scene"><img src="images/arrow_up.png" alt="Back to top" style="margin:8px auto 0"/></a>
+      <p style="font-family: 'LexiaBold', Georgia, sans-serif"><a href="#scene_1" class="btn_scene">Back to top</a></p>
+    </div>
+  </div>
+</div>
+
+<div id="space_9" class="scene">
+  <img src="images/spaces/bg_space_9.png" alt="Snow"/>
+
+  <div class="facebook_follow">
+    <a href="http://www.facebook.com/faridiot"><img src="images/scenes/scene_8/facebook_follow.png" alt="Follow us on Facebook"/></a>
+  </div>
+  
+  <div class="twitter_follow">
+    <a href="https://twitter.com/faridiot"><img src="images/scenes/scene_8/twitter_follow.png" alt="Follow us on Twitter"/></a>
+  </div>
+  
+  <div class="facebook_share">
+    <a href="#" onClick="postToFeed(); return false;"><img src="images/scenes/scene_8/facebook_share.png" alt="Share this on Facebook"/></a>
+  </div>
+  
+  <div class="twitter_share">
+    <a href="http://twitter.com/intent/tweet?url=http://borobudur.designer.web.id"><img src="images/scenes/scene_8/twitter_share.png" alt="Share this on Twitter"/></a>
+  </div>
+</div>
+
+</div>
+</body>
+
+</html>
